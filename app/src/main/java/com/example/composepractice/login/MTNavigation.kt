@@ -10,7 +10,7 @@ fun MTNavigation() {
     val navController = rememberNavController()
     NavHost(
         navController = navController,
-        startDestination = MTScreens.MTScreen.route
+        startDestination = MTScreens.MTScreen2.route
     ) {
         composable(
             MTScreens.MTScreen.route

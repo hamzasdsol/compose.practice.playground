@@ -18,6 +18,8 @@ import androidx.compose.runtime.remember
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
+import androidx.compose.ui.geometry.Offset
+import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.unit.dp
@@ -29,15 +31,38 @@ import kotlinx.coroutines.delay
 fun MTScreen(
     navController: NavController
 ) {
-    Column(modifier = Modifier.fillMaxSize()) {
+    Column(
+        modifier = Modifier
+            .fillMaxSize()
+    ) {
         val context = LocalContext.current
         Box(
             modifier = Modifier
                 .fillMaxWidth()
                 .weight(1f)
-                .background(Color.White)
+                .background(
+                    brush = Brush.verticalGradient(
+                        colors = listOf(
+                            Color(0xFF153B42), Color(0xFF222222)
+                        ),
+                    )
+                )
         ) {
-            Text(text = "Some text to show", modifier = Modifier.align(Alignment.Center))
+            MenuBackground(
+                modifier = Modifier
+                    .align(Alignment.TopStart)
+                    .offset(y = 32.dp)
+            )
+            ProfileImageBackground(
+                modifier = Modifier
+                    .align(Alignment.TopEnd)
+                    .offset(y = 32.dp)
+            )
+            Text(
+                text = "Some text to show",
+                color = Color.White,
+                modifier = Modifier.align(Alignment.Center)
+            )
         }
         LoadDumpProgress(
             modifier = Modifier
@@ -52,10 +77,11 @@ fun MTScreen(
             modifier = Modifier
                 .fillMaxWidth()
                 .weight(1f)
-                .background(Color.White)
+                .background(Color(0xFF11B4D4))
         ) {
             Text(
                 text = "Some text to show for bottom box",
+                color = Color.White,
                 modifier = Modifier.align(Alignment.Center)
             )
         }
