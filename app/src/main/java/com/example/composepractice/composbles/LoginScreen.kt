@@ -16,8 +16,8 @@ import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.text.input.PasswordVisualTransformation
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
-import com.example.composepractice.login.Screen
-import com.example.composepractice.login.MenuBackground
+import com.example.composepractice.composbles.Screen
+import com.example.composepractice.composbles.MenuBackground
 
 
 @Composable

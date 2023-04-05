@@ -1,4 +1,4 @@
-package com.example.composepractice.login
+package com.example.composepractice.composbles
 
 import androidx.compose.runtime.Composable
 import androidx.navigation.NavType

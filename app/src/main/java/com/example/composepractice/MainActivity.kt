@@ -1,22 +1,24 @@
 package com.example.composepractice
 
+import android.os.Build
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
+import androidx.annotation.RequiresApi
 import androidx.compose.foundation.layout.*
 import androidx.compose.material.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.Modifier
 import androidx.navigation.compose.rememberNavController
-import com.example.composepractice.formvalidation.presentation.RegistrationForm
-import com.example.composepractice.login.MTScreen
-import com.example.composepractice.login.MTScreen2
-import com.example.composepractice.login.MTScreens
+import com.example.composepractice.composbles.MTWeightPicker
+import com.example.composepractice.composbles.MainScreenContainer
 import com.example.composepractice.ui.theme.ComposePracticeTheme
+import com.example.composepractice.weightpicker.WheelTextPickerCustom
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
 class MainActivity : ComponentActivity() {
+    @RequiresApi(Build.VERSION_CODES.Q)
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
@@ -27,7 +29,7 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colors.background
                 ) {
-                    MTScreen2()
+                    MainScreenContainer()
                 }
             }
         }

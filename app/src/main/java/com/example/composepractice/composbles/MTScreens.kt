@@ -1,4 +1,4 @@
-package com.example.composepractice.login
+package com.example.composepractice.composbles
 
 sealed class MTScreens(val route: String) {
     object MTScreen: MTScreens("mt_screen_1")

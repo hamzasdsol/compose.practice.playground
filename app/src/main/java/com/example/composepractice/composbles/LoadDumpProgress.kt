@@ -1,4 +1,4 @@
-package com.example.composepractice.login
+package com.example.composepractice.composbles
 
 import androidx.compose.animation.core.LinearEasing
 import androidx.compose.animation.core.animateFloatAsState

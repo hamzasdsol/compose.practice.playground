@@ -93,5 +93,8 @@ dependencies {
     implementation 'com.robertlevonyan.compose:buttontogglegroup:1.1.0'
 
     //
-    implementation 'com.github.commandiron:WheelPickerCompose:1.0.2'
+    implementation 'com.github.commandiron:WheelPickerCompose:1.1.10'
+
+    implementation "dev.chrisbanes.snapper:snapper:0.3.0"
+
 }

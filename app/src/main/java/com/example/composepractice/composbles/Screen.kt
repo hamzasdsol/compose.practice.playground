@@ -1,4 +1,4 @@
-package com.example.composepractice.login
+package com.example.composepractice.composbles
 
 sealed class Screen(val route: String) {
     object LoginScreen : Screen("login_screen")

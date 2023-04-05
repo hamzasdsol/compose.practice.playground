@@ -1,4 +1,4 @@
-package com.example.composepractice.login
+package com.example.composepractice.composbles
 
 import android.os.CountDownTimer
 import android.util.Log
@@ -9,7 +9,6 @@ import androidx.compose.runtime.Composable
 import androidx.compose.runtime.DisposableEffect
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
-import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 

@@ -1,4 +1,4 @@
-package com.example.composepractice.login
+package com.example.composepractice.composbles
 
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.size
